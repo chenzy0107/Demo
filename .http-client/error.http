@@ -1,0 +1,2 @@
+### 获取错误码树
+GET http://localhost:8080/api/error/get
