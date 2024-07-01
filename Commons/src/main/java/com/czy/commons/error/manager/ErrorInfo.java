@@ -1,7 +1,7 @@
 package com.czy.commons.error.manager;
 
 import com.czy.commons.error.api.ErrorCode;
-import com.czy.commons.error.system.SystemErrorCodes;
+import com.czy.commons.error.system.SystemErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.slf4j.helpers.MessageFormatter;
@@ -19,7 +19,7 @@ public class ErrorInfo {
     private final String msg;
 
     public static ErrorInfo parse(String msg) {
-        return ERROR_MSG_CODES_MAP.computeIfAbsent(msg, m -> new ErrorInfo(SystemErrorCodes.SYSTEM_ERROR.getCode(), msg));
+        return ERROR_MSG_CODES_MAP.computeIfAbsent(msg, m -> new ErrorInfo(SystemErrorCode.SYSTEM_ERROR.getCode(), msg));
     }
 
     public static ErrorInfo parse(ErrorCode errorCode) {

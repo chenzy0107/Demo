@@ -2,7 +2,7 @@ package com.czy.commons.error.response;
 
 import com.czy.commons.error.api.ErrorCode;
 import com.czy.commons.error.manager.ErrorInfo;
-import com.czy.commons.error.system.SystemErrorCodes;
+import com.czy.commons.error.system.SystemErrorCode;
 import lombok.Getter;
 
 @Getter
@@ -16,7 +16,8 @@ public class Result<T> extends ErrorInfo {
 
 
     public static <T> Result<T> success(T data) {
-        Result<T> result = new Result<>(SystemErrorCodes.SUCCESS.getCode(), SystemErrorCodes.SUCCESS.getMsg());
+        SystemErrorCode success = SystemErrorCode.SUCCESS;
+        Result<T> result = new Result<>(success.getCode(), success.getMsg());
         result.data = data;
         return result;
     }

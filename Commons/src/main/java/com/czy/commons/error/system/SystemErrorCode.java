@@ -5,16 +5,16 @@ import com.czy.commons.error.manager.ErrorManager;
 import lombok.Getter;
 
 @Getter
-public enum SystemErrorCodes implements ErrorCode {
+public enum SystemErrorCode implements ErrorCode {
 
     SUCCESS(0, "ok"),
     SYSTEM_ERROR(1, "system error");
 
-    private final int nodeNum;
+    private final int nodeCode;
     private final String msg;
 
-    SystemErrorCodes(int nodeNum, String msg) {
-        this.nodeNum = nodeNum;
+    SystemErrorCode(int nodeCode, String msg) {
+        this.nodeCode = nodeCode;
         this.msg = msg;
         ErrorManager.register(SystemProjectModule.INSTANCE, this);
     }
@@ -22,6 +22,6 @@ public enum SystemErrorCodes implements ErrorCode {
 
     @Override
     public int getNodeCode() {
-        return 0;
+        return nodeCode;
     }
 }

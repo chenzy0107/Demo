@@ -3,7 +3,7 @@ package com.czy.commons.error.springmvc;
 import com.czy.commons.error.exception.IErrorCodeException;
 import com.czy.commons.error.manager.ErrorInfo;
 import com.czy.commons.error.response.Result;
-import com.czy.commons.error.system.SystemErrorCodes;
+import com.czy.commons.error.system.SystemErrorCode;
 import com.google.common.base.Joiner;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
@@ -38,14 +38,14 @@ public class ErrorExceptionHandle {
             ErrorInfo errorInfo = ((IErrorCodeException) e).getErrorInfo();
             Result<?> apiResult;
             if (errorInfo == null) {
-                apiResult = Result.error(SystemErrorCodes.SYSTEM_ERROR.getCode(), pair.getRight());
+                apiResult = Result.error(SystemErrorCode.SYSTEM_ERROR.getCode(), pair.getRight());
             } else {
                 apiResult = Result.error(errorInfo.getCode(), errorInfo.getMsg());
             }
             return new ResponseEntity<>(apiResult, HttpStatus.OK);
         }
         log.error("error, request: {}", parseParam(request), e);
-        Result<String> errorResult = Result.error(SystemErrorCodes.SYSTEM_ERROR.getCode(), pair.getLeft().getClass().getSimpleName() + ": " + pair.getRight());
+        Result<String> errorResult = Result.error(SystemErrorCode.SYSTEM_ERROR.getCode(), pair.getLeft().getClass().getSimpleName() + ": " + pair.getRight());
         return new ResponseEntity<>(errorResult, HttpStatus.OK);
     }
 
