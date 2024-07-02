@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="User-mgt" />
         <module name="Commons" />
+        <module name="Resource-mgt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

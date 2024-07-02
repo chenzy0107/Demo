@@ -1,13 +1,12 @@
 spring:
   application:
-    name: mgt-user
+    name: user-mgt
   cloud:
     nacos:
       config:
         server-addr: localhost:8848
         extension-configs:
           - config:
-            data-id: mgt-user.yml
+            data-id: user-mgt
             refresh: true
-        file-extension: yml
-        namespace: Dev
+        file-extension: yaml

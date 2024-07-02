@@ -11,15 +11,18 @@
     <modules>
         <module>Commons</module>
         <module>User-mgt</module>
+        <module>Resource-mgt</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
+        <czy-commons.version>1.0</czy-commons.version>
+
         <spring-boot.version>2.7.14</spring-boot.version>
-        <spring-cloud.versoin>2021.0.5</spring-cloud.versoin>
-        <spring-cloud-alibaba.version>2021.0.5.0</spring-cloud-alibaba.version>
+        <spring-cloud.versoin>2021.0.3</spring-cloud.versoin>
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
 
         <fastjson2.version>2.0.51</fastjson2.version>
         <lombok.version>1.18.28</lombok.version>
@@ -74,6 +77,12 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.czy</groupId>
+                <artifactId>Commons</artifactId>
+                <version>${czy-commons.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
