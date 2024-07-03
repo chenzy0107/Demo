@@ -7,7 +7,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @Slf4j
-@EnableFeignClients(basePackages = "com.czy.commons.remote")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class UserMgtApplication {

@@ -14,7 +14,6 @@ public class Result<T> extends ErrorInfo {
         super(code, msg);
     }
 
-
     public static <T> Result<T> success(T data) {
         SystemErrorCode success = SystemErrorCode.SUCCESS;
         Result<T> result = new Result<>(success.getCode(), success.getMsg());
