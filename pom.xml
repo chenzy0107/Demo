@@ -28,6 +28,9 @@
         <lombok.version>1.18.28</lombok.version>
         <google-guava.version>33.2.1-jre</google-guava.version>
         <commons-lang3.version>3.1</commons-lang3.version>
+        <mybatis-plus.version>3.5.7</mybatis-plus.version>
+        <mysql.version>8.0.33</mysql.version>
+        <mybatis-generator-core.version>1.4.2</mybatis-generator-core.version>
     </properties>
 
     <dependencyManagement>
@@ -83,6 +86,22 @@
                 <groupId>com.czy</groupId>
                 <artifactId>Commons</artifactId>
                 <version>${czy-commons.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator-core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

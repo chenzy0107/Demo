@@ -1,7 +1,6 @@
 package com.czy.commons.remote.config;
 
 import com.alibaba.fastjson2.JSONObject;
-import com.czy.commons.error.response.Result;
 import com.czy.commons.error.system.SystemErrorCode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.FeignException;

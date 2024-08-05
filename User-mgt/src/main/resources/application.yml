@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: user-mgt
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user_center?serverTimezone=UTC
+    username: root
+    password: 123456
   cloud:
     nacos:
       discovery:
