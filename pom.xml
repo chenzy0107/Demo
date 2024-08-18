@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.czy</groupId>
-    <artifactId>SpringCloudDemo</artifactId>
+    <artifactId>Demo</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
         <module>Commons</module>
-        <module>User-mgt</module>
-        <module>Resource-mgt</module>
+        <module>Mybatis</module>
+        <module>SpringBoot</module>
     </modules>
 
     <properties>
@@ -29,8 +29,6 @@
         <google-guava.version>33.2.1-jre</google-guava.version>
         <commons-lang3.version>3.1</commons-lang3.version>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
-        <mysql.version>8.0.33</mysql.version>
-        <mybatis-generator-core.version>1.4.2</mybatis-generator-core.version>
     </properties>
 
     <dependencyManagement>
@@ -92,16 +90,6 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-core</artifactId>
-                <version>${mybatis-generator-core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

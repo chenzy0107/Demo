@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="User-mgt" />
+        <module name="SpringBoot" />
         <module name="Commons" />
-        <module name="Resource-mgt" />
+        <module name="Mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Nacos-config" target="11" />
+      <module name="Resource-mgt" target="11" />
+      <module name="User-mgt" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
