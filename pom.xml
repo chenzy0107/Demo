@@ -14,6 +14,8 @@
         <module>SpringBoot</module>
         <module>Java</module>
         <module>ErrorCode</module>
+        <module>RabbitMQ</module>
+        <module>Producer</module>
     </modules>
 
     <properties>
