@@ -9,9 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>Commons</module>
+        <module>Util</module>
         <module>Mybatis</module>
         <module>SpringBoot</module>
+        <module>Java</module>
+        <module>ErrorCode</module>
     </modules>
 
     <properties>
