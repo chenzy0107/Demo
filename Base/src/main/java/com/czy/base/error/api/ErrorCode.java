@@ -1,6 +1,6 @@
-package com.czy.error.api;
+package com.czy.base.error.api;
 
-import com.czy.error.manager.ErrorManager;
+import com.czy.base.error.manager.ErrorManager;
 
 public interface ErrorCode {
     int getNodeCode();

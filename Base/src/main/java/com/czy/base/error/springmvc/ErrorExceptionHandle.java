@@ -1,9 +1,9 @@
-package com.czy.error.springmvc;
+package com.czy.base.error.springmvc;
 
-import com.czy.error.exception.IErrorCodeException;
-import com.czy.error.manager.ErrorInfo;
-import com.czy.error.response.Result;
-import com.czy.error.system.SystemErrorCode;
+import com.czy.base.error.exception.IErrorCodeException;
+import com.czy.base.error.manager.ErrorInfo;
+import com.czy.base.error.response.Result;
+import com.czy.base.error.system.SystemErrorCode;
 import com.google.common.base.Joiner;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;

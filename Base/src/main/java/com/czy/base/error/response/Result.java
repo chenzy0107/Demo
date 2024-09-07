@@ -1,8 +1,8 @@
-package com.czy.error.response;
+package com.czy.base.error.response;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.manager.ErrorInfo;
-import com.czy.error.system.SystemErrorCode;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.manager.ErrorInfo;
+import com.czy.base.error.system.SystemErrorCode;
 import lombok.Getter;
 
 @Getter

@@ -1,8 +1,8 @@
-package com.czy.error.exception;
+package com.czy.base.error.exception;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.api.ProjectModule;
-import com.czy.error.manager.ErrorInfo;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.api.ProjectModule;
+import com.czy.base.error.manager.ErrorInfo;
 
 public abstract class BaseException extends Exception implements IErrorCodeException {
 

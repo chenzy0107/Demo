@@ -1,7 +1,7 @@
-package com.czy.error.system;
+package com.czy.base.error.system;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.manager.ErrorManager;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.manager.ErrorManager;
 import lombok.Getter;
 
 @Getter

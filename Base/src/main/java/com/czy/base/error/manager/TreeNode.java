@@ -1,4 +1,4 @@
-package com.czy.error.manager;
+package com.czy.base.error.manager;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

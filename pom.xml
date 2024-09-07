@@ -16,6 +16,7 @@
         <module>ErrorCode</module>
         <module>RabbitMQ</module>
         <module>Producer</module>
+        <module>Base</module>
     </modules>
 
     <properties>

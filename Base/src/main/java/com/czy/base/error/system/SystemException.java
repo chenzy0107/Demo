@@ -1,9 +1,9 @@
-package com.czy.error.system;
+package com.czy.base.error.system;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.api.ProjectModule;
-import com.czy.error.exception.BaseException;
-import com.czy.error.manager.ErrorInfo;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.api.ProjectModule;
+import com.czy.base.error.exception.BaseException;
+import com.czy.base.error.manager.ErrorInfo;
 
 public class SystemException extends BaseException {
 

@@ -1,6 +1,6 @@
-package com.czy.error.system;
+package com.czy.base.error.system;
 
-import com.czy.error.api.ProjectModule;
+import com.czy.base.error.api.ProjectModule;
 
 public class SystemProjectModule implements ProjectModule {
 

@@ -1,7 +1,7 @@
-package com.czy.error.manager;
+package com.czy.base.error.manager;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.system.SystemErrorCode;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.system.SystemErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.slf4j.helpers.MessageFormatter;

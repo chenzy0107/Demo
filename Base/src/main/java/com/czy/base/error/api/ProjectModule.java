@@ -1,6 +1,6 @@
-package com.czy.error.api;
+package com.czy.base.error.api;
 
-import com.czy.error.system.SystemProjectModule;
+import com.czy.base.error.system.SystemProjectModule;
 import com.google.common.base.Preconditions;
 
 public interface ProjectModule {

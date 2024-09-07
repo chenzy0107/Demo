@@ -1,7 +1,7 @@
-package com.czy.error.manager;
+package com.czy.base.error.manager;
 
-import com.czy.error.api.ErrorCode;
-import com.czy.error.api.ProjectModule;
+import com.czy.base.error.api.ErrorCode;
+import com.czy.base.error.api.ProjectModule;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
