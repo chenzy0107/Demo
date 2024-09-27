@@ -9,14 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>Util</module>
+        <module>Base</module>
         <module>Mybatis</module>
         <module>SpringBoot</module>
         <module>Java</module>
-        <module>ErrorCode</module>
         <module>RabbitMQ</module>
-        <module>Producer</module>
-        <module>Base</module>
     </modules>
 
     <properties>
@@ -36,6 +33,13 @@
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.czy</groupId>
+            <artifactId>Base</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
             <dependency>

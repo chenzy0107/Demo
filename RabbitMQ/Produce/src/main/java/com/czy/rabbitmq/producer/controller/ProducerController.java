@@ -1,6 +1,6 @@
 package com.czy.rabbitmq.producer.controller;
 
-import com.czy.error.response.Result;
+import com.czy.base.error.response.Result;
 import com.czy.rabbitmq.producer.config.RabbitMQConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

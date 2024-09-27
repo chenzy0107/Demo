@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfig {
-
     public static final String EXCHANGE_TOPIC_INFORM = "exchange_topic_inform";
     public static final String QUEUE_INFORM_MSG = "queue_inform_msg";
     public static final String ROUTING_KEY_MSG = "inform.#.msg.#";

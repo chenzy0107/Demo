@@ -4,3 +4,5 @@
 /*/test
 /RabbitMQ/Produce/target/
 /RabbitMQ/Receiver/target/
+/*/src/test/
+/.fastRequest/
